@@ -2,19 +2,29 @@
 <html>
 <head>
 	<title>Seasonal Sales</title>
-	<!-- Compiled and minified CSS -->
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-
-	<!-- Compiled and minified JavaScript -->
+	  <script
+		  src="https://code.jquery.com/jquery-3.1.1.min.js"
+		  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+		  crossorigin="anonymous"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="sales.css">
 </head>
 <body>
-	<h1>Seasonal Sales Items</h1>
-
-
-
-
+	<div class="container">
+		<h1>Seasonal Sales Items</h1>
+	</div>
+	<div class="row">
+		<div class="input-field col s4 offset-s4">
+			<select id="seasonSelect">
+				<option value="" disabled selected>Choose your option</option>
+			</select>
+			<label>Season Select</label>
+		</div>
+	</div>
+	<div class="conatiner" id="productView">
+		
+	</div>
 	<script type="text/javascript" src="seasonal-sales.js"></script>
 </body>
 </html>
